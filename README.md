@@ -201,7 +201,7 @@ Example:
   src="large-photo.jpg" 
   alt="Mountain landscape" 
   loading="lazy"
-/>
+>
 ```
 
 ------------------------------------------------------------------------
@@ -261,7 +261,7 @@ W3C Validator: https://validator.w3.org/
 <a id="accessibility-tips"></a>
 ## ♿ Accessibility Tips
 
--   Add alt text to images\
+-   Add alt text to images
 -   Use `<label>` with `<input>`
 -   Use semantic HTML
 -   Ensure color contrast
