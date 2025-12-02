@@ -27,7 +27,6 @@ formatting --- based on W3Schools + professional standards.
 -   [Performance Tips](#performance-tips)
 -   [Full Example](#full-example)
 -   [Summary Table](#summary-table)
--   [License](#license)
 
 ------------------------------------------------------------------------
 
