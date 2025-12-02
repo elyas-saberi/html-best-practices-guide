@@ -312,7 +312,3 @@ W3C Validator: https://validator.w3.org/
   CSS/JS               External files
   Validation           W3C Validator
 
-------------------------------------------------------------------------
-
-`<a id="license">`{=html}`</a>`{=html} \## 📄 License MIT License ---
-free to copy, modify, and use.
