@@ -129,6 +129,7 @@ Avoid:
 ## 💬 Quotations 
 
 Use **double quotes** for attributes.
+
 ✔ Recommended:
 ```html
 <input type="text" placeholder="Enter name">
