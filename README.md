@@ -285,6 +285,7 @@ Example:
 <h1>Main page title</h1>
 <h2>Section title</h2>
 ```
+Do not use headings for visual styling only (e.g., bold text).
 <br></br>
 ### Use descriptive links (avoid "click here").
 
