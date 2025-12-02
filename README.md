@@ -68,25 +68,18 @@ VSCode can automatically insert spaces when you press the Tab key.
 ### ✔ Nest elements properly
 
 Correct:
-
-``` html
+```html
 <p><strong>Important text</strong></p>
 ```
 
 Incorrect:
-
-``` html
+```html
 <p><strong>Important text</p></strong>
 ```
 
-\### ✔ Avoid unnecessary
-```{=html}
-<div>
-```
-usage
+### ✔ Avoid unnecessary <div> usage
 
-Use semantic tags such as `<header>`, `<main>`, `<footer>`, `<nav>`,
-`<section>`, `<article>`, `<aside>`.
+Use semantic tags such as `<header>`, `<main>`, `<footer>`, `<nav>`, `<section>`, `<article>`, `<aside>`.
 
 <p style="font-size:1.1em;">Read more: <b><a href="https://github.com/elyas-saberi/semantic-html-cheatsheet.git">Stop Using &lt;div&gt; Everywhere</a></b></p>
 
@@ -245,10 +238,10 @@ W3C Validator: https://validator.w3.org/
 <a id="performance-tips"></a>
 ## 🚀 Performance Tips
 
--   Lazy-loading\
--   Compression\
--   Minification\
--   Preload\
+-   Lazy-loading
+-   Compression
+-   Minification
+-   Preload
 -   Small DOM
 
 ------------------------------------------------------------------------
