@@ -140,20 +140,30 @@ Use **double quotes** for attributes.
 <a id="html-comments"></a>
 ## 💬 HTML Comments
 
-``` html
+### ✔ Use comments to describe code meaningfully
+```html
 <!-- Navigation bar -->
 <nav>...</nav>
 ```
+
+### ✘ Avoid over-commenting trivial code.
 
 ------------------------------------------------------------------------
 
 <a id="html-head-best-practices"></a>
 ## 🧠 HTML Head Best Practices
 
-``` html
+Always include:
+```html
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Your Page Title</title>
+```
+
+Recommended additions:
+```html
+<meta name="description" content="Short SEO-friendly description.">
+<link rel="stylesheet" href="style.css">
 ```
 
 ------------------------------------------------------------------------
@@ -178,6 +188,13 @@ Lowercase + hyphens:\
 
 <a id="code-formatting-tips"></a>
 ## ✨ Code Formatting Tips
+
+-   Use consistent indentation\
+-   Keep one element per line\
+-   Use blank lines between logical sections\
+-   Format attributes on new lines when long
+
+Example:
 
 ``` html
 <img 
