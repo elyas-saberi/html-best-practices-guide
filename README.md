@@ -189,9 +189,9 @@ Lowercase + hyphens:\
 <a id="code-formatting-tips"></a>
 ## ✨ Code Formatting Tips
 
--   Use consistent indentation\
--   Keep one element per line\
--   Use blank lines between logical sections\
+-   Use consistent indentation
+-   Keep one element per line
+-   Use blank lines between logical sections
 -   Format attributes on new lines when long
 
 Example:
@@ -212,6 +212,8 @@ Example:
 -   `<center>`
 -   `<font>`
 -   `<marquee>`
+
+Use CSS instead.
 
 ------------------------------------------------------------------------
 
@@ -235,8 +237,15 @@ Correct:
 <a id="keep-css--js-external"></a>
 ## 💻 Keep CSS & JS External
 
+CSS:
+
 ``` html
 <link rel="stylesheet" href="styles.css">
+```
+
+JS:
+
+``` html
 <script src="script.js"></script>
 ```
 
@@ -252,6 +261,14 @@ W3C Validator: https://validator.w3.org/
 <a id="accessibility-tips"></a>
 ## ♿ Accessibility Tips
 
+-   Add alt text to images\
+-   Use `<label>` with `<input>`
+-   Use semantic HTML
+-   Ensure color contrast
+-   Add ARIA roles only when necessary
+
+Example:
+
 ``` html
 <label for="email">Email</label>
 <input id="email" type="email">
@@ -262,21 +279,25 @@ W3C Validator: https://validator.w3.org/
 <a id="seo-best-practices"></a>
 ## 🔍 SEO Best Practices
 
+Use meaningful headings:
+
 ``` html
 <h1>Main page title</h1>
 <h2>Section title</h2>
 ```
+
+Use descriptive links (avoid "click here").
 
 ------------------------------------------------------------------------
 
 <a id="performance-tips"></a>
 ## 🚀 Performance Tips
 
--   Lazy-loading
--   Compression
--   Minification
--   Preload
--   Small DOM
+-   Use `loading="lazy"` on images
+-   Compress assets
+-   Minimize CSS & JS
+-   Preload critical assets
+-   Keep DOM small
 
 ------------------------------------------------------------------------
 
