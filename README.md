@@ -279,14 +279,14 @@ Example:
 <a id="seo-best-practices"></a>
 ## 🔍 SEO Best Practices
 
-Use meaningful headings:
+### Use meaningful headings:
 
 ``` html
 <h1>Main page title</h1>
 <h2>Section title</h2>
 ```
 
-Use descriptive links (avoid "click here").
+### Use descriptive links (avoid "click here").
 
 ✘ Incorrect:
 ```html
