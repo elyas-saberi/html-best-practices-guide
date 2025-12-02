@@ -288,6 +288,28 @@ Use meaningful headings:
 
 Use descriptive links (avoid "click here").
 
+✘ Incorrect:
+```html
+<p><a href="#">Click here</a> to learn about accessibility.</p>
+```
+If all the links say “Click here,” they become meaningless:
+
+-   Click here
+-   Click here
+-   Click here
+
+✔ Correct:
+```html
+<p><a href="#">Learn more</a> about web accessibility.</p>
+```
+Descriptive ones are clear:
+
+-   Download the accessibility guide
+-   Read HTML best practices
+-   View pricing
+
+
+ 
 ------------------------------------------------------------------------
 
 <a id="performance-tips"></a>
