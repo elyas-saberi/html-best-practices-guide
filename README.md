@@ -88,9 +88,21 @@ Use semantic tags such as `<header>`, `<main>`, `<footer>`, `<nav>`, `<section>`
 <a id="attributes"></a>
 ## 🔤 Attributes
 
+### ✔ Always use lowercase
+
 ``` html
 <a href="page.html">Link</a>
+```
+
+### ✔ Use quotes around attribute values
+
+``` html
 <input type="text" value="John">
+```
+
+### ✔ Include required attributes
+
+``` html
 <img src="cat.jpg" alt="A cute cat">
 ```
 
