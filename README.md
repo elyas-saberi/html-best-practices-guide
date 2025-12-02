@@ -1,8 +1,8 @@
-# 🌐 HTML Best Practices --- Full Guide (Based on W3Schools & Modern Standards)
+# 🌐 HTML Best Practices — Full Guide (Based on W3Schools & Modern Standards)
 
 A complete guide to modern HTML best practices, including syntax rules,
 semantic elements, accessibility tips, SEO guidelines, and clean code
-formatting --- based on W3Schools + professional standards.
+formatting — based on W3Schools + professional standards.
 
 ------------------------------------------------------------------------
 
@@ -103,8 +103,8 @@ Use semantic tags such as `<header>`, `<main>`, `<footer>`, `<nav>`,
 
 ------------------------------------------------------------------------
 
-<a id="boolean-attributes"></a>## 
-🔘 Boolean Attributes
+<a id="boolean-attributes"></a>
+## 🔘 Boolean Attributes
 
 Correct:
 
