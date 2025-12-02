@@ -25,7 +25,6 @@ formatting --- based on W3Schools + professional standards.
 -   [Accessibility Tips](#accessibility-tips)
 -   [SEO Best Practices](#seo-best-practices)
 -   [Performance Tips](#performance-tips)
--   [Full Example](#full-example)
 -   [Summary Table](#summary-table)
 
 ------------------------------------------------------------------------
@@ -254,61 +253,21 @@ W3C Validator: https://validator.w3.org/
 
 ------------------------------------------------------------------------
 
-<a id="full-example"></a>
-## 🧩 Full Example
-
-``` html
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="A clean HTML5 example following best practices.">
-  <title>HTML Best Practices</title>
-  <link rel="stylesheet" href="style.css">
-</head>
-
-<body>
-  <header>
-    <h1>Welcome</h1>
-    <nav>
-      <a href="#intro">Intro</a>
-      <a href="#content">Content</a>
-    </nav>
-  </header>
-
-  <main id="content">
-    <section>
-      <h2>Why Semantic HTML?</h2>
-      <p>It improves accessibility, SEO, and readability.</p>
-    </section>
-  </main>
-
-  <footer>
-    <p>&copy; 2025 HTML Best Practices</p>
-  </footer>
-</body>
-</html>
-```
-
-------------------------------------------------------------------------
-
 <a id="summary-table"></a>
 ## 📋 Summary Table
 
-  Category             Best Practice
-  -------------------- ------------------------
-  Doctype              Use `<!DOCTYPE html>`
-  Element Names        Use lowercase
-  Attributes           Use lowercase & quotes
-  Boolean Attributes   Omit value
-  Encoding             UTF-8
-  Semantic Tags        Use proper structure
-  Deprecated Tags      Avoid them
-  Comments             Use proper comments
-  Block Elements       Wrap properly
-  File Names           lowercase + hyphen
-  Indentation          Consistent
-  CSS/JS               External files
-  Validation           W3C Validator
-
+| Category           | Best Practice               |
+|--------------------|-----------------------------|
+| Doctype            | Use `<!DOCTYPE html>`       |
+| Element Names      | Use lowercase               |
+| Attributes         | Use lowercase & quotes      |
+| Boolean Attributes | Omit value                  |
+| Encoding           | UTF-8                       |
+| Semantic Tags      | Use proper structure        |
+| Deprecated Tags    | Avoid them                  |
+| Comments           | Use proper comments         |
+| Block Elements     | Wrap properly               |
+| File Names         | lowercase + hyphen          |
+| Indentation        | Consistent                  |
+| CSS/JS             | External files              |
+| Validation         | W3C Validator               |
