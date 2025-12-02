@@ -17,16 +17,15 @@ A complete guide to modern HTML best practices, including syntax rules, semantic
 - [SEO Best Practices](#seo-best-practices)
 - [Performance Tips](#performance-tips)
 - [Full Example](#full-example)
-- [License](#license)
 
 ---
-
+<a id="introduction"></a>
 ## 🧩 Introduction
 This document provides clean, modern best practices for writing HTML.  
 It expands on the guidelines from W3Schools and adds professional standards used in production websites.
 
 ---
-
+<a id="general-syntax-rules"></a>
 ## 📏 General Syntax Rules
 
 ### ✔ Use lowercase for tags
@@ -48,7 +47,7 @@ Use **2 or 4 spaces**, but never tabs.
 VSCode can automatically insert spaces when you press the Tab key.
 
 ---
-
+<a id="html-elements"></a>
 ## 🧱 HTML Elements
 
 ### ✔ Nest elements properly
@@ -60,7 +59,7 @@ Incorrect nesting breaks HTML parsers.
 <!-- Incorrect -->
 <p><strong>Important text</p></strong>
 ```
-<br></br>
+
 ### ✔ Avoid unnecessary `<div>` usage (Semantic HTML)
 Use:
 - `<header>`
@@ -74,8 +73,9 @@ Use:
 Instead of endless `<div class="header">…</div>`.
 
 <p style="font-size:1.1em;">Read more: <b><a href="https://github.com/elyas-saberi/semantic-html-cheatsheet.git">Stop Using &lt;div&gt; Everywhere</a></b></p>
----
 
+---
+<a id="attributes"></a>
 ## 🔤 Attributes
 
 ### ✔ Always use lowercase
@@ -94,7 +94,7 @@ Instead of endless `<div class="header">…</div>`.
 ```
 
 ---
-
+<a id="quotations"></a>
 ## 💬 Quotations
 
 Use double quotes `" "`.
@@ -105,7 +105,7 @@ Use double quotes `" "`.
 ```
 
 ---
-
+<a id="html-comments"></a>
 ## 💬 HTML Comments
 
 ### ✔ Use comments to describe code meaningfully
@@ -117,7 +117,7 @@ Use double quotes `" "`.
 ### ✘ Avoid over-commenting trivial code.
 
 ---
-
+<a id="html-head-best-practices"></a>
 ## 🧠 HTML Head Best Practices
 
 Always include:
@@ -134,7 +134,7 @@ Recommended additions:
 ```
 
 ---
-
+<a id="file-structure"></a>
 ## 📁 File Structure
 
 Recommended GitHub-friendly project layout:
@@ -151,7 +151,7 @@ project/
 ```
 
 ---
-
+<a id="code-formatting-tips"></a>
 ## ✨ Code Formatting Tips
 
 ### ✔ Use consistent indentation  
@@ -170,7 +170,7 @@ Example:
 ```
 
 ---
-
+<a id="accessibility-tips"></a>
 ## ♿ Accessibility Tips
 
 ### ✔ Add `alt` text to images  
@@ -186,7 +186,7 @@ Example:
 ```
 
 ---
-
+<a id="seo-best-practices"></a>
 ## 🔍 SEO Best Practices
 
 ### ✔ Use meaningful headings (`h1` → `h6`)
@@ -212,7 +212,7 @@ Bad:
 ```
 
 ---
-
+<a id="performance-tips"></a>
 ## 🚀 Performance Tips
 
 ### ✔ Use `loading="lazy"` on images
@@ -226,7 +226,7 @@ Bad:
 ### ✔ Avoid huge DOM trees  
 
 ---
-
+<a id="full-example"></a>
 ## 🧩 Full Example
 
 ```html
@@ -262,11 +262,6 @@ Bad:
 </body>
 </html>
 ```
-
----
-
-## 📄 License
-MIT License — free to copy, modify, and use.
 
 ---
 
