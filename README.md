@@ -77,7 +77,7 @@ Incorrect:
 <p><strong>Important text</p></strong>
 ```
 
-### ✔ Avoid unnecessary <div> usage
+### ✔ Avoid unnecessary `<div>` usage
 
 Use semantic tags such as `<header>`, `<main>`, `<footer>`, `<nav>`, `<section>`, `<article>`, `<aside>`.
 
