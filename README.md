@@ -1,167 +1,177 @@
-# 🌐 HTML Best Practices — Full Guide (Based on W3Schools & Modern Standards)
-A complete guide to modern HTML best practices, including syntax rules, semantic elements, accessibility tips, SEO guidelines, and clean code formatting — based on W3Schools + professional standards.
+# 🌐 HTML Best Practices --- Full Guide (Based on W3Schools & Modern Standards)
 
----
+A complete guide to modern HTML best practices, including syntax rules,
+semantic elements, accessibility tips, SEO guidelines, and clean code
+formatting --- based on W3Schools + professional standards.
+
+------------------------------------------------------------------------
 
 ## 📑 Table of Contents
-- [Introduction](#introduction)
-- [General Syntax Rules](#general-syntax-rules)
-- [HTML Elements](#html-elements)
-- [Attributes](#attributes)
-- [Quotations](#quotations)
-- [HTML Comments](#html-comments)
-- [HTML Head Best Practices](#html-head-best-practices)
-- [File Structure](#file-structure)
-- [Code Formatting Tips](#code-formatting-tips)
-- [Accessibility Tips](#accessibility-tips)
-- [SEO Best Practices](#seo-best-practices)
-- [Performance Tips](#performance-tips)
-- [Full Example](#full-example)
 
----
+-   [Introduction](#introduction)
+-   [General Syntax Rules](#general-syntax-rules)
+-   [HTML Elements](#html-elements)
+-   [Attributes](#attributes)
+-   [Boolean Attributes](#boolean-attributes)
+-   [Quotations](#quotations)
+-   [HTML Comments](#html-comments)
+-   [HTML Head Best Practices](#html-head-best-practices)
+-   [File Structure & Naming](#file-structure--naming)
+-   [Code Formatting Tips](#code-formatting-tips)
+-   [Avoid Deprecated Tags](#avoid-deprecated-tags)
+-   [Wrap Block Elements Correctly](#wrap-block-elements-correctly)
+-   [Keep CSS & JS External](#keep-css--js-external)
+-   [Validate HTML](#validate-html)
+-   [Accessibility Tips](#accessibility-tips)
+-   [SEO Best Practices](#seo-best-practices)
+-   [Performance Tips](#performance-tips)
+-   [Full Example](#full-example)
+-   [Summary Table](#summary-table)
+-   [License](#license)
+
+------------------------------------------------------------------------
+
 <a id="introduction"></a>
 ## 🧩 Introduction
-This document provides clean, modern best practices for writing HTML.  
-It expands on the guidelines from W3Schools and adds professional standards used in production websites.
+This document provides clean, modern best practices for writing HTML.\
+It expands on the guidelines from W3Schools and adds professional
+standards used in production websites.
 
----
+------------------------------------------------------------------------
+
 <a id="general-syntax-rules"></a>
 ## 📏 General Syntax Rules
 
 ### ✔ Use lowercase for tags
-```html
+
+``` html
 <p>This is correct</p>
 <P>This is NOT recommended</P>
 ```
 
 ### ✔ Close all tags
-Even void elements should follow consistent style.
-```html
+
+``` html
 <br>
 <img src="img.jpg" alt="Description">
 ```
 
 ### ✔ Always indent properly
+
 Use **2 or 4 spaces**, but never tabs.
 
 VSCode can automatically insert spaces when you press the Tab key.
 
----
+------------------------------------------------------------------------
+
 <a id="html-elements"></a>
 ## 🧱 HTML Elements
 
 ### ✔ Nest elements properly
-Incorrect nesting breaks HTML parsers.
-```html
-<!-- Correct -->
-<p><strong>Important text</strong></p>
 
-<!-- Incorrect -->
+Correct:
+
+``` html
+<p><strong>Important text</strong></p>
+```
+
+Incorrect:
+
+``` html
 <p><strong>Important text</p></strong>
 ```
 
-### ✔ Avoid unnecessary `<div>` usage (Semantic HTML)
-Use:
-- `<header>`
-- `<main>`
-- `<footer>`
-- `<nav>`
-- `<section>`
-- `<article>`
-- `<aside>`
+\### ✔ Avoid unnecessary
+```{=html}
+<div>
+```
+usage
 
-Instead of endless `<div class="header">…</div>`.
+Use semantic tags such as `<header>`, `<main>`, `<footer>`, `<nav>`,
+`<section>`, `<article>`, `<aside>`.
 
 <p style="font-size:1.1em;">Read more: <b><a href="https://github.com/elyas-saberi/semantic-html-cheatsheet.git">Stop Using &lt;div&gt; Everywhere</a></b></p>
 
----
+------------------------------------------------------------------------
+
 <a id="attributes"></a>
 ## 🔤 Attributes
 
-### ✔ Always use lowercase
-```html
+``` html
 <a href="page.html">Link</a>
-```
-
-### ✔ Use quotes around attribute values
-```html
 <input type="text" value="John">
-```
-
-### ✔ Include required attributes (like `alt` for images)
-```html
 <img src="cat.jpg" alt="A cute cat">
 ```
 
----
-<a id="quotations"></a>
-## 💬 Quotations
+------------------------------------------------------------------------
 
-Use double quotes `" "`.
+<a id="boolean-attributes"></a>## 
+🔘 Boolean Attributes
 
-✔ Recommended:
-```html
-<input type="text" placeholder="Enter name">
+Correct:
+
+``` html
+<input type="checkbox" checked>
 ```
 
----
+Avoid:
+
+``` html
+<input type="checkbox" checked="checked">
+```
+
+------------------------------------------------------------------------
+
+<a id="quotations"></a>
+## 💬 Quotations 
+
+Use **double quotes** for attributes.
+
+------------------------------------------------------------------------
+
 <a id="html-comments"></a>
 ## 💬 HTML Comments
 
-### ✔ Use comments to describe code meaningfully
-```html
+``` html
 <!-- Navigation bar -->
 <nav>...</nav>
 ```
 
-### ✘ Avoid over-commenting trivial code.
+------------------------------------------------------------------------
 
----
 <a id="html-head-best-practices"></a>
 ## 🧠 HTML Head Best Practices
 
-Always include:
-```html
+``` html
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Your Page Title</title>
 ```
 
-Recommended additions:
-```html
-<meta name="description" content="Short SEO-friendly description.">
-<link rel="stylesheet" href="style.css">
-```
+------------------------------------------------------------------------
 
----
-<a id="file-structure"></a>
-## 📁 File Structure
+<a id="file-structure--naming"></a>
+## 📁 File Structure & Naming
 
-Recommended GitHub-friendly project layout:
-```
-project/
-│ README.md
-│ index.html
-│ style.css
-│ script.js
-└── assets/
-    ├── images/
-    ├── icons/
-    └── fonts/
-```
+    project/
+    │ README.md
+    │ index.html
+    │ style.css
+    │ script.js
+    └── assets/
+        ├── images/
+        ├── icons/
+        └── fonts/
 
----
+Lowercase + hyphens:\
+`my-website-page.html`
+
+------------------------------------------------------------------------
+
 <a id="code-formatting-tips"></a>
 ## ✨ Code Formatting Tips
 
-### ✔ Use consistent indentation  
-### ✔ Write readable line lengths  
-### ✔ Keep one element per line  
-### ✔ Use blank lines between logical sections  
-### ✔ Format attributes on new lines for long tags  
-
-Example:
-```html
+``` html
 <img 
   src="large-photo.jpg" 
   alt="Mountain landscape" 
@@ -169,67 +179,86 @@ Example:
 />
 ```
 
----
+------------------------------------------------------------------------
+
+<a id="avoid-deprecated-tags"></a>
+## ⚠️ Avoid Deprecated Tags
+
+-   `<center>`
+-   `<font>`
+-   `<marquee>`
+
+------------------------------------------------------------------------
+
+<a id="wrap-block-elements-correctly"></a>
+## 🔲 Wrap Block Elements Correctly
+
+Incorrect:
+
+``` html
+<span><div>Invalid</div></span>
+```
+
+Correct:
+
+``` html
+<div><span>Valid</span></div>
+```
+
+------------------------------------------------------------------------
+
+<a id="keep-css--js-external"></a>
+## 💻 Keep CSS & JS External
+
+``` html
+<link rel="stylesheet" href="styles.css">
+<script src="script.js"></script>
+```
+
+------------------------------------------------------------------------
+
+<a id="validate-html"></a>
+## 🔍 Validate HTML
+
+W3C Validator: https://validator.w3.org/
+
+------------------------------------------------------------------------
+
 <a id="accessibility-tips"></a>
 ## ♿ Accessibility Tips
 
-### ✔ Add `alt` text to images  
-### ✔ Use `<label>` for every `<input>`  
-### ✔ Use semantic HTML  
-### ✔ Ensure color contrast  
-### ✔ Add ARIA roles only when necessary (never replace semantic tags)
-
-Example:
-```html
+``` html
 <label for="email">Email</label>
 <input id="email" type="email">
 ```
 
----
+------------------------------------------------------------------------
+
 <a id="seo-best-practices"></a>
 ## 🔍 SEO Best Practices
 
-### ✔ Use meaningful headings (`h1` → `h6`)
-```html
+``` html
 <h1>Main page title</h1>
 <h2>Section title</h2>
 ```
 
-### ✔ Use metadata
-```html
-<meta name="description" content="HTML best practices guide.">
-```
+------------------------------------------------------------------------
 
-### ✔ Use descriptive link text
-Good:
-```
-<a href="/pricing">View pricing plans</a>
-```
-
-Bad:
-```
-<a href="#">Click here</a>
-```
-
----
 <a id="performance-tips"></a>
 ## 🚀 Performance Tips
 
-### ✔ Use `loading="lazy"` on images
-```html
-<img src="photo.jpg" alt="" loading="lazy">
-```
+-   Lazy-loading\
+-   Compression\
+-   Minification\
+-   Preload\
+-   Small DOM
 
-### ✔ Compress images  
-### ✔ Minimize CSS & JS  
-### ✔ Use `<link rel="preload">` for critical assets  
-### ✔ Avoid huge DOM trees  
+------------------------------------------------------------------------
 
----
 <a id="full-example"></a>
 ## 🧩 Full Example
 
-```html
+``` html
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -263,5 +292,28 @@ Bad:
 </html>
 ```
 
----
+------------------------------------------------------------------------
 
+<a id="summary-table"></a>
+## 📋 Summary Table
+
+  Category             Best Practice
+  -------------------- ------------------------
+  Doctype              Use `<!DOCTYPE html>`
+  Element Names        Use lowercase
+  Attributes           Use lowercase & quotes
+  Boolean Attributes   Omit value
+  Encoding             UTF-8
+  Semantic Tags        Use proper structure
+  Deprecated Tags      Avoid them
+  Comments             Use proper comments
+  Block Elements       Wrap properly
+  File Names           lowercase + hyphen
+  Indentation          Consistent
+  CSS/JS               External files
+  Validation           W3C Validator
+
+------------------------------------------------------------------------
+
+`<a id="license">`{=html}`</a>`{=html} \## 📄 License MIT License ---
+free to copy, modify, and use.
